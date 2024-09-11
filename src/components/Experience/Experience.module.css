@@ -1,0 +1,63 @@
+.title {
+	font-size: 1.3rem;
+}
+
+.experiences{
+	font-family: var(--font-family-2);
+	display: grid;
+	gap: 1rem;
+}
+.experience{
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: repeat(3, min-content);
+	grid-template-areas: 
+	"title timestamp"
+	"roles roles"
+	"desc desc"
+	;
+}
+.experience__title{
+	font-family: var(--font-family-1);
+	font-weight: 500;
+	font-size: 1rem;
+	margin: 0;
+	margin-bottom: 5px;
+	grid-area: title;
+}
+.experience__remote{
+	font-size: .8rem;
+	font-weight: 500;
+	background-color: var(--light-gray-color);
+	padding: .2rem .5rem;
+	border-radius: var(--border-radius);
+	place-content: center;
+	margin:0;
+	justify-self: left;
+	align-self: center;
+	margin-left: .5rem;
+}
+.experience__roles{
+	font-size: .9rem;
+	grid-area: roles;
+	display: flex;
+	flex-direction: row;
+	gap: .5rem;
+}
+
+.experience__role{
+	margin:0;
+	margin-bottom: .5rem;
+}
+.experience__timestamp{
+	color:var(--text-color-gray);
+	font-size: .9rem;
+	margin:0;
+	grid-area: timestamp;
+	justify-self: end;
+}
+
+.experience__desc{
+	font-size: 0.8rem;
+	grid-area: desc;
+}

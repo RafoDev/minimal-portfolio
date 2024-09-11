@@ -1,0 +1,14 @@
+.paragraph {
+	margin: 0;
+	margin-bottom: 0.4rem;
+	font-family: var(--font-family-2);
+	font-size: 0.9rem;
+	color: var(--text-color-gray);
+	white-space: pre-line;
+}
+
+.title {
+	margin: 0;
+	margin-bottom: 0.8rem;
+	font-family: var(--font-family-1);
+}

@@ -1,0 +1,31 @@
+.overlay{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  animation-name: appear;
+  animation-duration: 0.25s;
+  background-color: rgba(130, 130, 130, 0.211);
+  transition: background-color .25s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close{
+  background-color: transparent;
+}
+
+@keyframes appear {
+  from{background-color: rgba(130, 130, 130, 0.0);}
+  to{background-color: rgba(130, 130, 130, 0.211);}
+}
+
+@media print{
+  .overlay{
+    display: none;
+  }
+}

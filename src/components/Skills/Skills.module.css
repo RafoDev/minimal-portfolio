@@ -1,0 +1,21 @@
+.title {
+	font-size: 1.3rem;
+}
+.skills {
+	font-family: var(--font-family-1);
+	display: flex;
+  flex-wrap: wrap;
+	gap: 0.3rem;
+}
+.skill {
+	font-size: .8rem;
+	font-weight: 600;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	padding: 0.2rem 0.5rem;
+	border-radius: var(--border-radius);
+	place-content: center;
+	margin: 0;
+	justify-self: left;
+	align-self: center;
+}

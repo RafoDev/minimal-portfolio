@@ -1,0 +1,38 @@
+.title {
+	font-size: 1.3rem;
+}
+
+.education-list{
+	font-family: var(--font-family-2);
+	display: grid;
+	gap: 1rem;
+}
+
+.education__item{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2, min-content);
+	grid-template-areas: 
+	"institution timestamp"
+	"desc desc"
+	;
+}
+.education__institution{
+	font-family: var(--font-family-1);
+	font-weight: 500;
+	font-size: 1rem;
+	margin: 0;
+	margin-bottom: 7px;
+	grid-area: institution;
+}
+.education__timestamp{
+	color:var(--text-color-gray);
+	font-size: .9rem;
+	margin:0;
+	grid-area: timestamp;
+	justify-self: end;
+}
+.education__desc{
+	font-size: 0.8rem;
+	grid-area: desc;
+}
